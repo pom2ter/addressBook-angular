@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="addressBookApp">
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="/angular/app/css/bootstrap.min.css">
+	<link rel="stylesheet/less" href="/angular/app/css/app.less">
+	<title>Angular Demo</title>
+</head>
+<body>
+	<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Carnet d'adresses</a>
+			</div>			
+
+			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#/viewAll">Liste de contact</a>
+					</li>
+					<li>
+						<a href="#/add">Ajouter</a>
+					</li>
+				</ul>
+			</nav>
+    	</div>
+	</header>
+
+	<main id="content" role="main">
+		<div ng-view="">
+		</div>
+	</main>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/angular/app/js/less-1.4.1.min.js"></script>
+	<script type="text/javascript" src="/angular/app/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/angular/app/js/app.js"></script>
+</body>
+</html>

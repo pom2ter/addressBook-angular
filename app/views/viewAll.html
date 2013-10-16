@@ -1,0 +1,30 @@
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group">
+						<span class="input-group-addon">Recherche</span>
+						<input type="text" class="form-control" ng-model="filter.nom" placeholder="Nom du contact">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Liste de contact</h3>
+					<ul class="liste">
+						<li ng-repeat="contact in liste | filter:filter.nom | orderBy:'lastName'">
+							<div>
+								<h4>{{contact.lastName}}, {{contact.firstName}}</h4>
+								<p>{{contact.city}}</p>
+								<p>
+									<a href="#/edit" class="edit glyphicon glyphicon-pencil"></a>
+									<a href="#/delete" ng-click="removeContact(contact)" class="delete glyphicon glyphicon-remove"></a>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
