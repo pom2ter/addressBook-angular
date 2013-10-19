@@ -17,9 +17,11 @@
 						<li ng-repeat="contact in liste | filter:filter.nom | orderBy:'lastName'">
 							<div>
 								<h4>{{contact.lastName}}, {{contact.firstName}}</h4>
-								<p>{{contact.city}}</p>
-								<p>
-									<a href="#/edit" class="edit glyphicon glyphicon-pencil"></a>
+								<p><a href="mailto:{{contact.email}}">{{contact.email}}</a>&nbsp;</p>
+								<p>{{contact.address}}</p>
+								<p>{{contact.phone}}</p>
+								<p class="bottom">
+									<a href="#/edit" ng-click="editContact(contact)" class="edit glyphicon glyphicon-pencil"></a>
 									<a href="#/delete" ng-click="removeContact(contact)" class="delete glyphicon glyphicon-remove"></a>
 								</p>
 							</div>

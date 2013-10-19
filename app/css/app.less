@@ -1,22 +1,26 @@
 body { padding-top:50px; }
 h3 { margin-bottom:15px; }
 #content { padding-top:25px; }
-.input-group { padding-bottom:20px; }
 
 ul.liste {
 	overflow:hidden; margin:0; padding:0; list-style:none;
 	li {
-		float:left; padding:0 20px 20px 0; width:24%;
+		float:left; padding:0 20px 20px 0; width:32%;
 		h4 {
 			color: #428bca;
 		}
 		div {
-			overflow:hidden; background-color:#fff; color:#444; border:1px solid #ddd; border-radius:4px; padding:10px;
+			overflow:hidden; position:relative; height:180px; padding:10px;
+			background-color:#fff; color:#444; border:1px solid #ddd; border-radius:4px;
 		}
 		a {
 			width:20px; height:20px; text-decoration:none;
 		}
-		a[class*="edit"] { float:left; }
-		a[class*="delete"] { float:right; }
+		p.bottom {
+			overflow:hidden; position:absolute; bottom:0; width:96%;
+			a[class*="edit"] { float:left; }
+			a[class*="delete"] { float:right; }
+		}
 	}
 }
+
