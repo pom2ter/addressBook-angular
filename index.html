@@ -2,9 +2,9 @@
 <html ng-app="addressBookApp">
 <head>
 	<meta charset="UTF-8" />
+	<title>Angular Demo</title>
 	<link rel="stylesheet" href="/angular/app/css/bootstrap.min.css">
 	<link rel="stylesheet/less" href="/angular/app/css/app.less">
-	<title>Angular Demo</title>
 </head>
 <body>
 	<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
@@ -37,10 +37,8 @@
 		</div>
 	</main>
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="/angular/app/js/less-1.4.1.min.js"></script>
-	<script type="text/javascript" src="/angular/app/js/bootstrap.min.js"></script>
+	<script data-main="/angular/app/js/main" src="/angular/app/js/libs/require.js"></script>
+	<script type="text/javascript" src="/angular/app/js/libs/angular.min.js"></script>
 	<script type="text/javascript" src="/angular/app/js/app.js"></script>
 </body>
 </html>
